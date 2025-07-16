@@ -1,7 +1,40 @@
-.tabela-palavras{
-    color: red;
-    background-color: aqua;
-    font-family: 'Courier New', monospace;
-    font-size: 14px;
+body {
+    background-color: #f9f9f9;
+    font-family: sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+/* crosswords cell */
+.cw-grid{
+    display: grid;
+    /* these describe how to organize the divs inside the grid */
+    grid-template-columns: repeat(5, 80px);
+    grid-template-rows: repeat(5, 80px);
+    /* adds a gap of 5 pixels between each element, horizontal
+    and vertically */
+    gap: 1px;
+}
+
+/* letter cells */
+.cw-cell{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 1px solid #999;
     text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+/* non-playable cells */
+.cw-cell-null{
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border: 1px solid #999;
+    text-align: center;
+    vertical-align: middle;
 }
