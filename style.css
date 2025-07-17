@@ -38,3 +38,23 @@ body {
     text-align: center;
     vertical-align: middle;
 }
+
+.row-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+
+.hints-list{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.hint{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+}
