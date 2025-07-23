@@ -1,3 +1,4 @@
+/* default style settings of the page */
 body {
     background-color: #f9f9f9;
     font-family: sans-serif;
@@ -29,23 +30,33 @@ body {
     font-size: 20px;
 }
 
+.cw-input{
+    width: 80px;
+    height: 80px;
+    border: none;
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
 /* non-playable cells */
 .cw-cell-null{
     width: 80px;
     height: 80px;
     background-color: black;
     border: 1px solid #999;
-    text-align: center;
-    vertical-align: middle;
 }
 
+/* wrapper to make grid and hints side by side */
 .row-wrapper{
     display: flex;
     flex-direction: row;
     gap: 50px;
 }
 
-
+/* horizontal and vertical hint lists */
 .hints-list{
     font-family: sans-serif;
     font-weight: bold;
@@ -53,6 +64,8 @@ body {
     padding: 10px;
 }
 
+
+/* individual hints */
 .hint{
     font-family: sans-serif;
     font-size: 15px;
